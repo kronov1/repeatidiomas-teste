@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Repeat Idiomas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FAF4EE;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo da barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #8f5834;
+            border: 2px solid #8f5834;
+            transition: all .4s;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #CD7E4B;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #a8683d;
+            border: 2px solid #a8683d;
+        }
+
+        .header {
+            background-color: #CD7E4B;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+
+        .header .menu ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .header a {
+            background-color: #fff;
+            border: 2px solid #fff;
+            color: #CD7E4B;
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 3px;
+            transition: all 0.3s;
+        }
+
+        .header h1 {
+            color: #FAF4EE;
+        }
+
+        .whatsapp-icon-img, .instagram-icon-img {
+            position: fixed;
+            right: 20px;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            border-radius: 50%;
+            text-align: center;
+            transition: all .3s;
+            z-index: 100;
+        }
+
+        .whatsapp-icon-img {
+            bottom: 20px;
+            background-color: #01e675;
+        }
+
+        .instagram-icon-img {
+            bottom: 90px;
+        }
+
+        .whatsapp-icon-img:hover, .instagram-icon-img:hover {
+            transform: scale(1.1);
+        }
+
+        .menu li {
+            transition: all .3s;
+        }
+
+        .menu li:hover {
+            transform: scale(1.05);
+            margin-bottom: 5px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        video, img {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+
+        section div {
+            max-width: 600px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #CD7E4B;
+            text-align: center;
+            padding: 20px;
+            color: #FAF4EE;
+        }
+
+        .footer-contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #8f58348e;
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .footer-form input, .footer-form textarea {
+            width: 100%;
+            padding: 10px;
+            outline: none;
+        }
+
+        .footer-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            cursor: pointer;
+            transition: all .2s;
+        }
+
+        .footer-form button:hover {
+            background-color: white;
+            color: #000;
+        }
+
+        footer h1 {
+            font-size: 24px;
+        }
+
+        footer p {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header img {
+                width: 120px;
+            }
+
+            .header .menu ul {
+                flex-direction: row;
+                gap: 35px;
+                margin-bottom: 10%;
+            }
+
+            video, img {
+                width: 100%;
+            }
+
+            section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-contact-container {
+                gap: 20px;
+            }
+
+            footer h1, p, h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header img {
+                width: 100px;
+            }
+
+            .header a {
+                padding: 5px;
+                font-size: 0.9rem;
+            }
+
+            h2, p {
+                font-size: 16px;
+            }
+
+            .footer-form button, .footer-form input, .footer-form textarea {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="2.png" alt="Logo da Repeat Idiomas">
+        <nav class="menu">
+            <ul>
+                <li><a href="#intro">Escola</a></li>
+                <li><a href="#methodology">Metodologia</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a class="whatsapp-icon-link" href="https://api.whatsapp.com/send/?phone=5511912498387&text&type=phone_number&app_absent=0" target="_blank"><img class="whatsapp-icon-img" src="whatsapp-svgrepo-com 1.svg" alt="WhatsApp"></a>
+    <a class="instagram-icon-link" href="https://www.instagram.com/repeat.idiomas" target="_blank"><img class="instagram-icon-img" src="instagram-logo-instagram-social-media-icon-free-png 1.png" alt="Instagram"></a>
+    <main>
+        <section id="intro">
+            <video controls>
+                <source src="" type="video/mp4">
+            </video>
+            <div>
+                <h2>A Escola</h2>
+                <p>A Repeat é uma escola de idiomas que se distingue pela sua metodologia única, desenvolvida com base nas experiências profissionais do fundador e na realidade do ensino de idiomas no Brasil. Focamos na repetição, trabalho constante, ensino personalizado, estímulos ao aluno e adaptação à realidade do idioma, para um aprendizado sério, eficaz e responsável. Não prometemos um caminho fácil, mas um ensino voltado à realidade e objetivos do aluno.</p>
+            </div>
+        </section>
+        <section id="methodology">
+            <div>
+                <h2>A Metodologia</h2>
+                <p>Nosso método inovador se destaca ao diferenciar-se do ensino tradicional de inglês, que muitas vezes acaba desanimando os alunos. Nossa metodologia própria foi cuidadosamente desenvolvida para atender às necessidades do aluno moderno, com um conceito de personalização e adaptação do ensino à sua rotina. Através de uma abordagem que valoriza a repetição constante, a prática frequente e a imersão em situações reais, buscamos despertar o interesse genuíno dos alunos. Com nosso método, procuramos criar uma experiência de aprendizado que seja envolvente, eficaz e alinhada às demandas contemporâneas.</p>
+            </div>
+            <img src="Imagem2.jpeg" alt="Metodologia da Repeat Idiomas">
+        </section>
+        <section id="services">
+            <img src="Imagem3.jpeg" alt="Serviços da Repeat Idiomas">
+            <div>
+                <h2>Serviços</h2>
+                <h2>Aulas em Grupo</h2>
+                <p>As aulas em grupo oferecem um ambiente colaborativo e motivador, onde os alunos podem interagir e se beneficiar da troca de conhecimentos. Essa interação social estimula a prática da conversação e promove um aprendizado diversificado. Além disso, as aulas em grupo são mais acessíveis financeiramente, compartilhando os custos do aprendizado. Embora a personalização seja limitada, as vantagens sociais e o estabelecimento de uma rotina de estudo regular compensam esse aspecto.</p>
+                <h2>Aulas Particulares</h2>
+                <p>As aulas particulares proporcionam uma experiência de aprendizado personalizada, adaptada às necessidades individuais dos alunos. Com atenção exclusiva do professor, os alunos podem progredir no seu ritmo, abordar suas dificuldades específicas e desfrutar de flexibilidade nos horários. Embora tenham um custo maior, as aulas particulares oferecem uma abordagem individualizada e envolvente, justificando o investimento para aqueles que buscam um aprendizado adaptado às suas necessidades.</p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <h1>Contato</h1>
+        <div class="footer-contact-container">
+            <form class="footer-form" action="https://api.staticforms.xyz/submit" method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+                <button type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="0faa44f1-b867-4809-b326-557d40825e7c">
+                <input type="hidden" name="redirectTo" value="">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
