@@ -411,7 +411,7 @@
                 <input name="mensagem" id="mensagem" placeholder="(DDD) Seu número"></input>
 
                 <!-- Adicionando o widget do reCAPTCHA -->
-                <div class="g-recaptcha" data-sitekey="6LdRV4UqAAAAADr7VPD0__ibiIiPx8Y7p5pY1q_6"></div>
+                <div class="g-recaptcha" data-sitekey="6Le8boUqAAAAAFOuV8wLNShn65HcN_egts-dPf9k"></div>
 
                 <button type="submit" data-button>Enviar</button>
             </form>
@@ -610,7 +610,7 @@
         const fetch = require('node-fetch');  // Para enviar a requisição HTTP
 
         async function verifyRecaptcha(recaptchaResponse) {
-            const secretKey = '6LdRV4UqAAAAADta2qn2NkiWh9tfU0JkIE11OWj3';  // Chave secreta do reCAPTCHA
+            const secretKey = '6Le8boUqAAAAABtOxNX9aid1pxfja7_7SztzxrS3';  // Chave secreta do reCAPTCHA
 
             // Envia a resposta do reCAPTCHA para o Google verificar
             const res = await fetch('https://www.google.com/recaptcha/api/siteverify', {
